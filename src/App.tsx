@@ -1,11 +1,24 @@
 import { useEffect } from "react";
 
-import { Box } from "@mui/material";
-
 import getHistoricalRatings from "./api/getHistoricalRatings";
 import getLeaning from "./api/getLeaning";
 import getSummary from "./api/getSummary";
+
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 import HomePage from "./pages/HomePage";
+import AboutUsPage from "./pages/AboutUsPage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />
+  },
+  {
+    path: "/about-us",
+    element: <AboutUsPage />
+  }
+])
 
 const App = () => {
   useEffect(() => {
@@ -20,7 +33,8 @@ const App = () => {
 
 
   return (
-    <HomePage />
+    
+    <RouterProvider router={router} />
   );
 }
 

@@ -1,50 +1,20 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  IconButton,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
-import MenuIcon from "@mui/icons-material/Menu";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Typewriter } from "react-simple-typewriter";
+import AppBarComponent from "../components/AppBarComponent";
 
 const HomePage = () => {
-  const phrases = ["truth", "factuality", "different viewpoints", "information"];
+  const phrases = [
+    "truth",
+    "factuality",
+    "different viewpoints",
+    "information",
+  ];
 
   return (
     <div>
-      <AppBar
-        position="static"
-        variant="outlined"
-        color="transparent"
-        className="h-24 flex justify-center items-center p-6"
-      >
-        <Toolbar className="space-x-6 w-full max-w-[95rem]">
-          <Typography
-            variant="h4"
-            fontWeight={400}
-            component="div"
-            className="text-blue-600 flex-1"
-          >
-            Political Spectrum
-          </Typography>
-          <Button color="inherit" className="normal-case p-2 px-5 rounded-lg">
-            Home
-          </Button>
-          <Button color="inherit" className="normal-case p-2 px-5 rounded-lg">
-            About Us
-          </Button>
-          <Button
-            className="normal-case p-2 px-5 bg-blue-500 rounded-lg"
-            variant="contained"
-          >
-            Get the Extension
-          </Button>
-        </Toolbar>
-      </AppBar>
+      <AppBarComponent />
 
       <div className="h-[calc(100vh-20rem)] min-h-[35rem] flex justify-center">
         <div className="w-full max-w-[95rem] flex">
@@ -62,7 +32,6 @@ const HomePage = () => {
                   delaySpeed={3000}
                 />
               </span>
-              
             </Typography>
             <Typography mb="2rem" className="w-96 text-slate-600">
               Using state-of-the-art Artifical Intelligence systems, Political
@@ -92,9 +61,7 @@ const HomePage = () => {
                 Article Analysis
               </Typography>
 
-              <div className="w-full h-4 bg-gradient-to-r from-blue-500 via-white to-red-500">
-
-              </div>
+              <div className="w-full h-4 bg-gradient-to-r from-blue-500 via-white to-red-500"></div>
             </div>
           </div>
         </div>
