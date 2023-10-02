@@ -50,7 +50,6 @@ const AboutUsCard = ({
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
-
         {bio}
       </Typography>
     </Card>
@@ -134,7 +133,18 @@ const AboutUsPage = () => {
               ]}
             />
 
-            <AboutUsCard name="Jimin Lim" picture={jiminPicture} bio="test" />
+            <AboutUsCard
+              name="Jimin Lim"
+              picture={jiminPicture}
+              bio="test"
+              socials={[
+                {
+                  name: "LinkedIn",
+                  icon: LinkedInIcon,
+                  link: "https://www.linkedin.com/in/jimin-lim-678159229/",
+                },
+              ]}
+            />
           </div>
         </div>
       </div>
