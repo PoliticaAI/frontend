@@ -11,6 +11,7 @@ import jiminPicture from "../assets/pfps/jimin.jpg";
 import { SvgIconComponent } from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FooterComponent from "../components/FooterComponent";
 
 const AboutUsCard = ({
   name,
@@ -58,10 +59,10 @@ const AboutUsCard = ({
 
 const AboutUsPage = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <AppBarComponent />
 
-      <div className="h-[calc(100vh-20rem)] min-h-[35rem]">
+      <div className="w-full pt-10 pb-40">
         <Typography
           variant="h2"
           fontWeight={600}
@@ -77,7 +78,7 @@ const AboutUsPage = () => {
           California.
         </Typography>
 
-        <div className="w-full flex justify-center">
+        <div className="flex justify-center">
           <div className="flex justify-around content-center w-[80rem]">
             <AboutUsCard
               name="Rohan Vij"
@@ -148,6 +149,8 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
+
+      <FooterComponent />
     </div>
   );
 };

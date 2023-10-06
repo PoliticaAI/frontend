@@ -39,6 +39,7 @@ const AppBarComponent = () => {
         <Button
           className="normal-case p-2 px-5 bg-blue-500 rounded-lg"
           variant="contained"
+          onClick={() => navigate("/get")}
         >
           Get the Extension
         </Button>
