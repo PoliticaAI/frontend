@@ -1,6 +1,9 @@
 import AppBarComponent from "../../components/AppBarComponent";
 import Panel1 from "./Panel1";
 import Panel2 from "./Panel2";
+
+import AnalyzeForm from "../../components/FormComponent";
+
 import FooterComponent from "../../components/FooterComponent";
 
 const Break = () => {
@@ -15,6 +18,7 @@ const HomePage = () => {
       <div className="flex flex-col items-center space-y-24">
         <Panel1 />
         <Break />
+        <AnalyzeForm />
         <Panel2 />
         <FooterComponent />
       </div>

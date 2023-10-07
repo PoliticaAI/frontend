@@ -26,15 +26,15 @@ const router = createBrowserRouter([
 ])
 
 const App = () => {
-  useEffect(() => {
-    (async () => {
-      const testUrl = new URL("https://apnews.com/article/washington-state-wildfires-deaths-inslee-biden-e4a51c18425ac4576f44870db2ee8aef");
+  // useEffect(() => {
+  //   (async () => {
+  //     const testUrl = new URL("https://apnews.com/article/washington-state-wildfires-deaths-inslee-biden-e4a51c18425ac4576f44870db2ee8aef");
       
-      console.log(await getHistoricalRatings(testUrl));
-      console.log(await getLeaning(testUrl));
-      console.log(await getSummary(testUrl))
-    })();
-  }, []);
+  //     console.log(await getHistoricalRatings(testUrl));
+  //     console.log(await getLeaning(testUrl));
+  //     console.log(await getSummary(testUrl))
+  //   })();
+  // }, []);
 
 
   return (
