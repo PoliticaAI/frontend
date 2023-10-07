@@ -11,7 +11,7 @@ const Panel1 = () => {
   return (
     <div className="h-[calc(100vh-200px)] min-h-[35rem] w-full max-w-[95rem] flex">
       <div className="w-2/5 flex flex-col justify-center mr-8 p-8">
-        <Typography variant="h2" fontWeight={600} mb="2rem">
+        <Typography variant="h2" className="mb-8 font-bold xl:text-6xl text-5xl">
           Your source of <br />
           <span className="text-blue-500 font-extrabold">
             <Typewriter
