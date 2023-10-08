@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Button, LinearProgress, TextField, Typography } from "@mui/material";
-import { startAnalysis, checkAnalysisStatus } from "../../api/analysis.api";
+import { startAnalysis, checkAnalysisStatus, ArticleAnalysis } from "../../api/analysis.api";
 
 const TryOutPanel = () => {
   const [link, setLink] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [data, setData] = useState<any | null>(null);
+  const [data, setData] = useState<ArticleAnalysis | null>(null);
   const [progress, setProgress] = useState<number | null>(null);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const TryOutPanel = () => {
       const intervalId = setInterval(() => {
         checkAnalysisStatus()
           .then((statusData) => {
-            if (statusData.status === "completed") {
+            if (statusData.result) {
               setData(statusData.result);
               setIsLoading(false);
               clearInterval(intervalId);

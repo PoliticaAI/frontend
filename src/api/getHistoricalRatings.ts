@@ -1,6 +1,6 @@
 import API_URL from "../config";
 
-interface HistoricalRatings {
+export interface HistoricalRatings {
   factuality: number;
   political: number;
 }

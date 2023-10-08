@@ -1,6 +1,23 @@
 const API_URL = "http://localhost:5000/";
 
-export const startAnalysis = (url: string) => {
+export interface ArticleAnalysis {
+  ddg_response: {
+    href: string;
+    thumb: string;
+    title: string;
+  }[];
+  gpt_response: {
+    fallacies: Record<string, string>;
+    ranking: string[];
+    reasons: Record<string, string>;
+    title: string;
+    top_image: string;
+  };
+}
+
+export const startAnalysis = (
+  url: string
+): Promise<{ process_id: string; status_url: string }> => {
   return fetch(API_URL + "start_analysis", {
     method: "POST",
     headers: {
@@ -21,7 +38,11 @@ export const startAnalysis = (url: string) => {
     });
 };
 
-export const checkAnalysisStatus = () => {
+export const checkAnalysisStatus = (): Promise<{
+  status: string;
+  progress: number;
+  result?: ArticleAnalysis;
+}> => {
   const process_id = localStorage.getItem("process_id");
   if (!process_id) {
     return Promise.reject("Process ID not found");

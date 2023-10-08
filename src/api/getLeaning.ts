@@ -1,6 +1,6 @@
 import API_URL from "../config";
 
-interface Leaning {
+export interface Leaning {
   rating: number;
 }
 

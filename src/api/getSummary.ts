@@ -1,6 +1,6 @@
 import API_URL from "../config";
 
-interface Summary {
+export interface Summary {
   summary: string;
 }
 
