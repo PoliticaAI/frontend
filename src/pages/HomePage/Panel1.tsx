@@ -4,6 +4,15 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Typewriter } from "react-simple-typewriter";
 import { useNavigate } from "react-router-dom";
 
+const ExtensionFrame = () => {
+  return (
+    <iframe
+      src="http://127.0.0.1:5172?embedded"
+      className="w-[400px] h-[500px] overflow-hidden border-1 border-solid border-slate-300 rounded-lg"
+    />
+  );
+};
+
 const Panel1 = () => {
   const phrases = ["truth", "factuality", "new viewpoints", "information"];
   const navigate = useNavigate();
@@ -11,7 +20,10 @@ const Panel1 = () => {
   return (
     <div className="h-[calc(100vh-200px)] min-h-[35rem] w-full max-w-[95rem] flex">
       <div className="w-2/5 flex flex-col justify-center mr-8 p-8">
-        <Typography variant="h2" className="mb-8 font-bold xl:text-6xl text-5xl">
+        <Typography
+          variant="h2"
+          className="mb-8 font-bold xl:text-6xl text-5xl"
+        >
           Your source of <br />
           <span className="text-blue-500 font-extrabold">
             <Typewriter
@@ -45,13 +57,7 @@ const Panel1 = () => {
           background: "#f2f7fc",
         }}
       >
-        <div className="w-[25rem] h-[25rem] bg-white rounded-2xl p-8 flex flex-col space-y-5">
-          <Typography variant="h5" fontWeight={600} className="text-slate-800">
-            Article Analysis
-          </Typography>
-
-          <div className="w-full h-4 bg-gradient-to-r from-blue-500 via-white to-red-500"></div>
-        </div>
+        <ExtensionFrame />
       </div>
     </div>
   );
