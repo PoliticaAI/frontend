@@ -1,6 +1,5 @@
 import AppBarComponent from "../../components/AppBarComponent";
 import Panel1 from "./Panel1";
-import TryOutPanel from "./TryOutPanel";
 import Panel2 from "./Panel2";
 
 import FooterComponent from "../../components/FooterComponent";

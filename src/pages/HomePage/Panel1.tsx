@@ -43,12 +43,12 @@ const Panel1 = () => {
           ratings on millions of articles.
         </Typography>
         <Button
-          className="w-52 px-3 py-3 rounded-xl bg-blue-500"
+          className="normal-case w-52 py-3 rounded-xl bg-blue-500"
           variant="contained"
           endIcon={<ChevronRightIcon />}
           onClick={() => navigate("/get")}
         >
-          Try it out now
+          Get The Extension
         </Button>
       </div>
       <div
