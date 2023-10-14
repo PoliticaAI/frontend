@@ -17,8 +17,6 @@ const HomePage = () => {
       <div className="flex flex-col items-center space-y-24">
         <Panel1 />
         <Break />
-        <TryOutPanel />
-        <Break />
         <Panel2 />
         <FooterComponent />
       </div>
