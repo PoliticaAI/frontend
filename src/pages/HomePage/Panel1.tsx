@@ -8,7 +8,7 @@ const ExtensionFrame = () => {
   return (
     <iframe
       src="http://127.0.0.1:5172?embedded"
-      className="w-[400px] h-[500px] xl:w-[500px] xl:h-[750px] overflow-hidden border-1 border-solid border-slate-300 rounded-lg"
+      className="w-[400px] h-[500px] 2xl:w-[500px] 2xl:h-[750px] overflow-hidden border-1 border-solid border-slate-300 rounded-lg"
     />
   );
 };
