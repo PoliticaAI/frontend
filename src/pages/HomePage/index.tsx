@@ -13,9 +13,8 @@ const HomePage = () => {
     <div>
       <AppBarComponent />
 
-      <div className="flex flex-col items-center space-y-24">
+      <div className="flex flex-col space-y-32">
         <Panel1 />
-        <Break />
         <Panel2 />
         <FooterComponent />
       </div>
