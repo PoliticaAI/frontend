@@ -4,9 +4,9 @@ import Panel2 from "./Panel2";
 
 import FooterComponent from "../../components/FooterComponent";
 
-const Break = () => {
-  return <div className="h-[1px] bg-[rgb(229,234,242)] w-full"></div>;
-};
+// const Break = () => {
+//   return <div className="h-[1px] bg-[rgb(229,234,242)] w-full"></div>;
+// };
 
 const HomePage = () => {
   return (

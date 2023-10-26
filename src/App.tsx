@@ -1,9 +1,3 @@
-import { useEffect } from "react";
-
-import getHistoricalRatings from "./api/getHistoricalRatings";
-import getLeaning from "./api/getLeaning";
-import getSummary from "./api/getSummary";
-
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";

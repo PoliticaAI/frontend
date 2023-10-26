@@ -13,15 +13,27 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FooterComponent from "../components/FooterComponent";
 
+const GithubSocial = (link: string) => ({
+  name: "GitHub",
+  icon: GitHubIcon,
+  link,
+});
+
+const LinkedInSocial = (link: string) => ({
+  name: "LinkedIn",
+  icon: LinkedInIcon,
+  link,
+});
+
 const AboutUsCard = ({
   name,
   picture,
-  bio,
+  children,
   socials,
 }: {
   name: string;
   picture: string;
-  bio: string;
+  children: React.ReactNode;
   socials?: { name: string; icon: SvgIconComponent; link: string }[];
 }) => {
   return (
@@ -43,16 +55,7 @@ const AboutUsCard = ({
         )}
       </div>
 
-      <Typography variant="body1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-        {bio}
-      </Typography>
+      <Typography variant="body1">{children}</Typography>
     </Card>
   );
 };
@@ -65,17 +68,14 @@ const AboutUsPage = () => {
       <div className="w-full pt-10 pb-40">
         <Typography
           variant="h2"
-          fontWeight={600}
-          mb="2rem"
-          mt="4rem"
-          textAlign="center"
+          className="mb-8 mt-16 text-center font-bold text-blue-500"
         >
           Our Team
         </Typography>
 
-        <Typography variant="h6" mb="2rem" textAlign="center">
-          We are a passionate group of high school students based in Dublin,
-          California.
+        <Typography variant="h6" className="mb-8 text-center">
+          We are a passionate group of high school students from Dublin High
+          School in Dublin, California.
         </Typography>
 
         <div className="flex justify-center">
@@ -83,69 +83,54 @@ const AboutUsPage = () => {
             <AboutUsCard
               name="Rohan Vij"
               picture={rohanPicture}
-              bio="test"
               socials={[
-                {
-                  name: "GitHub",
-                  icon: GitHubIcon,
-                  link: "https://github.com/Rohan-Vij",
-                },
-                {
-                  name: "LinkedIn",
-                  icon: LinkedInIcon,
-                  link: "https://www.linkedin.com/in/rohankvij/",
-                },
+                GithubSocial("https://github.com/Rohan-Vij"),
+                LinkedInSocial("https://www.linkedin.com/in/rohankvij/"),
               ]}
-            />
+            >
+              test
+            </AboutUsCard>
 
             <AboutUsCard
               name="Ayush Garg"
               picture={ayushPicture}
-              bio="test"
               socials={[
-                {
-                  name: "GitHub",
-                  icon: GitHubIcon,
-                  link: "https://github.com/megargayu/",
-                },
-                {
-                  name: "LinkedIn",
-                  icon: LinkedInIcon,
-                  link: "https://www.linkedin.com/in/ayush-garg-b270bb24b/",
-                },
+                GithubSocial("https://github.com/megargayu/"),
+                LinkedInSocial(
+                  "https://www.linkedin.com/in/ayush-garg-b270bb24b/"
+                ),
               ]}
-            />
+            >
+              Ayush is a motivated programmer and computer scientist interested
+              in artificial intelligence and bioinformatics. He was the lead
+              frontend developer for this project and helped with branding and
+              design. He is currently researching at UC Santa Barbara on MRI and
+              CT segmentation and is the first author on a paper accepted into
+              the American Physical Society's 2023 Fluid Dynamics conference.
+            </AboutUsCard>
 
             <AboutUsCard
               name="Mohit Varikuti"
               picture={mohitPicture}
-              bio="test"
               socials={[
-                {
-                  name: "GitHub",
-                  icon: GitHubIcon,
-                  link: "https://github.com/GitHubEmploy",
-                },
-                {
-                  name: "LinkedIn",
-                  icon: LinkedInIcon,
-                  link: "https://www.linkedin.com/in/mohitvarikuti/",
-                },
+                GithubSocial("https://github.com/GitHubEmploy"),
+                LinkedInSocial("https://www.linkedin.com/in/mohitvarikuti/"),
               ]}
-            />
+            >
+              test
+            </AboutUsCard>
 
             <AboutUsCard
               name="Jimin Lim"
               picture={jiminPicture}
-              bio="test"
               socials={[
-                {
-                  name: "LinkedIn",
-                  icon: LinkedInIcon,
-                  link: "https://www.linkedin.com/in/jimin-lim-678159229/",
-                },
+                LinkedInSocial(
+                  "https://www.linkedin.com/in/jimin-lim-678159229/"
+                ),
               ]}
-            />
+            >
+              test
+            </AboutUsCard>
           </div>
         </div>
       </div>
