@@ -146,7 +146,14 @@ const AboutUsPage = () => {
                 ),
               ]}
             >
-              test
+              Jimin is apart of a non-profit organization that harnesses musical
+              talents for fundraising concerts and free lessons. She serves as
+              an officer, mentor, and website manager, resolving internal
+              issues, mentoring violin enthusiasts, and ensuring everything on
+              the site is in place. Her mentorship is not limited to technical
+              lessons as she also forms meaningful connections with her mentees
+              helping them throughout their musical growth. She worked on PR as
+              well as content for this project.
             </AboutUsCard>
           </div>
         </div>
