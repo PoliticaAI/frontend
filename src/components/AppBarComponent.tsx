@@ -1,6 +1,8 @@
 import { AppBar, Button, Toolbar, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
+import LogoImage from "/logo.svg";
+
 const AppBarComponent = () => {
   const navigate = useNavigate();
 
@@ -9,17 +11,10 @@ const AppBarComponent = () => {
       position="static"
       variant="outlined"
       color="transparent"
-      className="h-24 flex justify-center items-center p-6"
+      className="h-24 flex justify-center items-center px-6 py-1"
     >
       <Toolbar className="space-x-6 w-full max-w-[95rem]">
-        <Typography
-          variant="h4"
-          fontWeight={400}
-          component="div"
-          className="text-blue-600 flex-1"
-        >
-          Political Spectrum
-        </Typography>
+        <img src={LogoImage} className="h-full mr-auto" />
 
         <Button
           color="inherit"

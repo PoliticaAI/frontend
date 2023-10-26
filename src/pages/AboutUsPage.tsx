@@ -88,7 +88,14 @@ const AboutUsPage = () => {
                 LinkedInSocial("https://www.linkedin.com/in/rohankvij/"),
               ]}
             >
-              test
+              Rohan developed the backend API and unit tests of the application,
+              and also hosted the app on a virtual private server. He is an
+              experienced web and AI developer, developing projects ranging from
+              in-house JWT authentication systems to using LangChain to build
+              financial analysis tools for FP&A teams. He is currently working
+              at a financial technology company implementing LLMs on top of
+              existing accounting platforms and writes for Towards Data Science
+              on Medium.
             </AboutUsCard>
 
             <AboutUsCard
@@ -106,7 +113,9 @@ const AboutUsPage = () => {
               frontend developer for this project and helped with branding and
               design. He is currently researching at UC Santa Barbara on MRI and
               CT segmentation and is the first author on a paper accepted into
-              the American Physical Society's 2023 Fluid Dynamics conference.
+              the American Physical Society's 2023 Fluid Dynamics conference. He
+              has also attended the UC Santa Barbara Summer Research Academies
+              program, with a ~15% acceptance rate.
             </AboutUsCard>
 
             <AboutUsCard
@@ -117,7 +126,15 @@ const AboutUsPage = () => {
                 LinkedInSocial("https://www.linkedin.com/in/mohitvarikuti/"),
               ]}
             >
-              test
+              Mohit has experience in both robotics and software development,
+              doing work for anything from school clubs to machine learning
+              labs. For this project, Mohit developed the LLM backend. He
+              currently works at a 3D printing company, focusing on AI analysis
+              in deposition based 3D printing. Mohit also develops drones
+              professionally under the DRL league, training open source ML
+              models for drone navigation. Additionally, Mohit has skills in AI
+              and machine learning and is knowledgeable in functional
+              programming algorithms.
             </AboutUsCard>
 
             <AboutUsCard
