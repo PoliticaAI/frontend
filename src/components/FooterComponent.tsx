@@ -6,7 +6,7 @@ const FooterComponent = () => {
     <div className="box-border h-32 w-full rounded-b-xl border-0 border-t-[1px] border-[rgb(229,234,242)] border-solid flex justify-center p-8">
       <div className="h-full w-full max-w-[95rem]">
         <Typography className="font-bold mb-4 text-blue-600">
-          Political Spectrum
+          Politica
         </Typography>
         <Link to="/about-us" className="hover:text-blue-500 text-gray-900">
           <Typography className="mb-4">About Us</Typography>

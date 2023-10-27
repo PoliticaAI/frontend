@@ -39,9 +39,9 @@ const Panel1 = () => {
             </span>
           </Typography>
           <Typography mb="2rem" className="w-96 text-slate-600">
-            Using state-of-the-art Artifical Intelligence systems, Political
-            Spectrum allows for instant bias, factuality, and trustworthiness
-            ratings on millions of articles.
+            Using state-of-the-art Artifical Intelligence systems, Politica
+            allows for instant bias, factuality, and trustworthiness ratings on
+            millions of articles.
           </Typography>
           <Button
             className="normal-case w-52 py-3 rounded-xl bg-blue-500"
