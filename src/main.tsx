@@ -32,7 +32,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: `"Inter", "Roboto", "Helvetica", "Arial", sans-serif`,
+    fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
   },
   palette: {
     

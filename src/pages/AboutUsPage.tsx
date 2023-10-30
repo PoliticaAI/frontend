@@ -81,24 +81,6 @@ const AboutUsPage = () => {
         <div className="flex justify-center">
           <div className="flex justify-around content-center w-[80rem]">
             <AboutUsCard
-              name="Rohan Vij"
-              picture={rohanPicture}
-              socials={[
-                GithubSocial("https://github.com/Rohan-Vij"),
-                LinkedInSocial("https://www.linkedin.com/in/rohankvij/"),
-              ]}
-            >
-              Rohan developed the backend API and unit tests of the application,
-              and also hosted the app on a virtual private server. He is an
-              experienced web and AI developer, developing projects ranging from
-              in-house JWT authentication systems to using LangChain to build
-              financial analysis tools for FP&A teams. He is currently working
-              at a financial technology company implementing LLMs on top of
-              existing accounting platforms and writes for Towards Data Science
-              on Medium.
-            </AboutUsCard>
-
-            <AboutUsCard
               name="Ayush Garg"
               picture={ayushPicture}
               socials={[
@@ -116,6 +98,24 @@ const AboutUsPage = () => {
               the American Physical Society's 2023 Fluid Dynamics conference. He
               has also attended the UC Santa Barbara Summer Research Academies
               program, with a ~15% acceptance rate.
+            </AboutUsCard>
+
+            <AboutUsCard
+              name="Rohan Vij"
+              picture={rohanPicture}
+              socials={[
+                GithubSocial("https://github.com/Rohan-Vij"),
+                LinkedInSocial("https://www.linkedin.com/in/rohankvij/"),
+              ]}
+            >
+              Rohan developed the backend API and unit tests of the application,
+              and also hosted the app on a virtual private server. He is an
+              experienced web and AI developer, developing projects ranging from
+              in-house JWT authentication systems to using LangChain to build
+              financial analysis tools for FP&A teams. He is currently working
+              at a financial technology company implementing LLMs on top of
+              existing accounting platforms and writes for Towards Data Science
+              on Medium.
             </AboutUsCard>
 
             <AboutUsCard
@@ -146,7 +146,7 @@ const AboutUsPage = () => {
                 ),
               ]}
             >
-              Jimin is apart of a non-profit organization that harnesses musical
+              Jimin is a part of a non-profit organization that harnesses musical
               talents for fundraising concerts and free lessons. She serves as
               an officer, mentor, and website manager, resolving internal
               issues, mentoring violin enthusiasts, and ensuring everything on
