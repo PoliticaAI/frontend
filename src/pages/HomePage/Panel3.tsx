@@ -23,7 +23,7 @@ const InfoCard = ({
   );
 };
 
-const Panel2 = () => {
+const Panel3 = () => {
   return (
     <div className="bg-blue-500">
       <img src={WaveImage} className="-mt-20 w-full h-20 select-none" />
@@ -70,4 +70,4 @@ const Panel2 = () => {
   );
 };
 
-export default Panel2;
+export default Panel3;

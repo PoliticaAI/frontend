@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import { useEffect } from "react";
 
-const link = "https://www.example.com/";
+const link = "https://chrome.google.com/webstore/detail/politica/fggiidefiajobkombhabphkjndcbjnnf/";
 
 const GetExtensionPage = () => {
   useEffect(() => {
